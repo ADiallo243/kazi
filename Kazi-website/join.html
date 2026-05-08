@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Rejoindre — Kazi</title>
+
+    <meta
+      name="description"
+      content="Créez votre profil professionnel et rejoignez les talents visibles sur Kazi."
+    />
+
+    <link rel="icon" href="assets/images/branding/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/join.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <a href="index.html" class="logo">Kazi</a>
+
+        <div class="nav-right">
+          <ul class="nav-links">
+            <li><a href="professionals.html">Explorer</a></li>
+            <li><a href="categories.html">Catégories</a></li>
+            <li><a href="join.html" class="active">Rejoindre</a></li>
+            <li><a href="about.html">À propos</a></li>
+          </ul>
+
+          <a href="join.html" class="nav-cta">Créer un profil</a>
+
+          <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="join-hero">
+        <div class="join-content">
+          <span class="join-tag">Rejoindre Kazi</span>
+
+          <h1>Présentez votre travail de manière plus professionnelle.</h1>
+
+          <p>
+            Créez votre profil Kazi et montrez votre portfolio, vos services et
+            votre univers dans une vitrine claire et moderne.
+          </p>
+        </div>
+      </section>
+
+      <section class="join-benefits">
+        <div class="join-benefit">
+          <span>01</span>
+          <h3>Profil clair</h3>
+          <p>
+            Présentez votre métier, votre ville, vos services et votre portfolio
+            dans une page propre.
+          </p>
+        </div>
+
+        <div class="join-benefit">
+          <span>02</span>
+          <h3>Contact direct</h3>
+          <p>
+            Les visiteurs peuvent vous contacter plus facilement pour discuter
+            de leur projet.
+          </p>
+        </div>
+
+        <div class="join-benefit">
+          <span>03</span>
+          <h3>Image professionnelle</h3>
+          <p>
+            Une présence mieux organisée aide à inspirer confiance dès le
+            premier regard.
+          </p>
+        </div>
+      </section>
+
+      <section class="join-form-section">
+        <div class="form-wrapper">
+          <div class="form-heading">
+            <span>Candidature</span>
+            <h2>Créer un profil</h2>
+          </div>
+
+          <form class="join-form" id="joinForm">
+            <div class="form-grid">
+              <div class="input-group">
+                <label for="fullName">Nom complet *</label>
+                <input
+                  type="text"
+                  id="fullName"
+                  placeholder="Mamadou Diallo"
+                  required
+                />
+              </div>
+
+              <div class="input-group">
+                <label for="job">Métier *</label>
+                <select id="job" required>
+                  <option value="">Sélectionner</option>
+                  <option>Vidéaste</option>
+                  <option>Photographe</option>
+                  <option>Designer</option>
+                  <option>Développeur web</option>
+                  <option>DJ</option>
+                  <option>Danseur</option>
+                  <option>Maquilleur</option>
+                  <option>Créateur de contenu</option>
+                </select>
+              </div>
+
+              <div class="input-group">
+                <label for="city">Ville *</label>
+                <input type="text" id="city" placeholder="Conakry" required />
+              </div>
+
+              <div class="input-group">
+                <label for="email">Email *</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="email@exemple.com"
+                  required
+                />
+              </div>
+
+              <div class="input-group">
+                <label for="whatsapp">WhatsApp</label>
+                <input
+                  type="tel"
+                  id="whatsapp"
+                  placeholder="+224 000 00 00 00"
+                />
+              </div>
+
+              <div class="input-group">
+                <label for="facebook">Facebook</label>
+                <input
+                  type="url"
+                  id="facebook"
+                  placeholder="https://facebook.com/username"
+                />
+              </div>
+
+              <div class="input-group full-width">
+                <label for="portfolio">Portfolio / lien important *</label>
+                <input
+                  type="url"
+                  id="portfolio"
+                  placeholder="https://votre-portfolio.com"
+                  required
+                />
+              </div>
+
+              <div class="input-group full-width">
+                <label for="description">
+                  Parlez rapidement de votre travail *
+                </label>
+                <textarea
+                  id="description"
+                  rows="6"
+                  placeholder="Votre univers, vos spécialités, votre style..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="input-group full-width">
+                <label for="portfolio-upload">Portfolio / images</label>
+
+                <div class="upload-box">
+                  <input type="file" id="portfolio-upload" multiple hidden />
+
+                  <label for="portfolio-upload" class="upload-label">
+                    <span>Glissez vos fichiers ici</span>
+                    <small>ou cliquez pour importer vos images</small>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              Envoyer ma candidature
+            </button>
+
+            <p class="form-note">
+              Les profils sont vérifiés avant publication afin de garder une
+              plateforme propre et fiable.
+            </p>
+
+            <div class="form-process">
+              <div>
+                <span>01</span>
+                <p>Nous recevons votre candidature.</p>
+              </div>
+
+              <div>
+                <span>02</span>
+                <p>Votre profil est vérifié avant publication.</p>
+              </div>
+
+              <div>
+                <span>03</span>
+                <p>Votre page peut ensuite être ajoutée sur Kazi.</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">Kazi</a>
+
+          <p>
+            Plateforme moderne pour découvrir des talents indépendants de
+            confiance.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Navigation</h4>
+
+          <a href="professionals.html">Explorer</a>
+          <a href="categories.html">Catégories</a>
+          <a href="join.html">Rejoindre</a>
+          <a href="about.html">À propos</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Catégories</h4>
+
+          <a href="categories.html">Vidéastes</a>
+          <a href="categories.html">Photographes</a>
+          <a href="categories.html">Designers</a>
+          <a href="categories.html">DJs</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact</h4>
+
+          <a href="contact.html">Contact</a>
+          <a href="#">Facebook</a>
+          <a href="#">WhatsApp</a>
+          <a href="#">TikTok</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Kazi. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <a
+      href="https://wa.me/224620000000?text=Bonjour%2C%20je%20viens%20du%20site%20Kazi%20et%20je%20souhaite%20avoir%20plus%20d%E2%80%99informations."
+      class="floating-contact"
+      target="_blank"
+    >
+      💬
+    </a>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/join.js"></script>
+  </body>
+</html>

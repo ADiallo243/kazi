@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Explorer — Kazi</title>
+
+    <meta
+      name="description"
+      content="Explorez des professionnels indépendants de confiance sur Kazi."
+    />
+
+    <link rel="icon" href="assets/images/branding/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/professionals.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <a href="index.html" class="logo">Kazi</a>
+
+        <div class="nav-right">
+          <ul class="nav-links">
+            <li><a href="professionals.html" class="active">Explorer</a></li>
+            <li><a href="categories.html">Catégories</a></li>
+            <li><a href="join.html">Rejoindre</a></li>
+            <li><a href="about.html">À propos</a></li>
+          </ul>
+
+          <a href="join.html" class="nav-cta">Créer un profil</a>
+
+          <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="explore-hero">
+        <span class="explore-tag">Explorer</span>
+
+        <h1>Trouvez le bon profil.</h1>
+
+        <p>
+          Des talents indépendants sélectionnés pour leur travail, leur style et
+          leur sérieux.
+        </p>
+      </section>
+
+      <section class="explore-section">
+        <div class="explore-tools">
+          <div class="search-wrap">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Rechercher un nom, un métier, une ville..."
+            />
+          </div>
+
+          <p class="profile-count">
+            <span class="count-dot"></span>
+            <strong id="profileCount">8</strong>
+            profils disponibles
+          </p>
+        </div>
+
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">Tous</button>
+          <button class="filter-btn" data-filter="videaste">Vidéastes</button>
+          <button class="filter-btn" data-filter="photographe">
+            Photographes
+          </button>
+          <button class="filter-btn" data-filter="designer">Designers</button>
+          <button class="filter-btn" data-filter="developpeur">
+            Développeurs web
+          </button>
+          <button class="filter-btn" data-filter="dj">DJs</button>
+          <button class="filter-btn" data-filter="danseur">Danseurs</button>
+          <button class="filter-btn" data-filter="maquilleur">
+            Maquilleurs
+          </button>
+          <button class="filter-btn" data-filter="createur">
+            Créateurs de contenu
+          </button>
+        </div>
+
+        <div class="professionals-grid">
+          <a
+            href="professionals/mamadou-diallo.html"
+            class="professional-card"
+            data-category="videaste"
+          >
+            <img
+              src="assets/images/professionals/mamadou-diallo/thumbnail.jpg"
+              alt="Mamadou Diallo"
+              loading="lazy"
+            />
+
+            <div class="professional-info">
+              <span>Vidéaste • Conakry</span>
+
+              <div class="profile-badges">
+                <small>Vérifié</small>
+                <small>Disponible</small>
+              </div>
+
+              <h3>Mamadou Diallo</h3>
+              <p>Clips, mariages et contenus cinématographiques.</p>
+
+              <span class="profile-link">Voir le profil</span>
+            </div>
+          </a>
+
+          <a
+            href="professionals/fatou-camara.html"
+            class="professional-card"
+            data-category="photographe"
+          >
+            <img
+              src="assets/images/professionals/mamadou-diallo/thumbnail.jpg"
+              alt="Fatou Camara"
+              loading="lazy"
+            />
+
+            <div class="professional-info">
+              <span>Photographe • Conakry</span>
+
+              <div class="profile-badges">
+                <small>Vérifié</small>
+                <small>Disponible</small>
+              </div>
+
+              <h3>Fatou Camara</h3>
+              <p>Portraits, cérémonies et shootings lifestyle.</p>
+
+              <span class="profile-link">Voir le profil</span>
+            </div>
+          </a>
+
+          <a
+            href="professionals/ibrahima-dj.html"
+            class="professional-card"
+            data-category="dj"
+          >
+            <img
+              src="assets/images/professionals/mamadou-diallo/thumbnail.jpg"
+              alt="Ibrahima DJ"
+              loading="lazy"
+            />
+
+            <div class="professional-info">
+              <span>DJ • Conakry</span>
+
+              <div class="profile-badges">
+                <small>Vérifié</small>
+                <small>Disponible</small>
+              </div>
+
+              <h3>Ibrahima DJ</h3>
+              <p>Ambiance pour mariages, anniversaires et événements.</p>
+
+              <span class="profile-link">Voir le profil</span>
+            </div>
+          </a>
+
+          <a
+            href="join.html"
+            class="professional-card coming-soon-card"
+            data-category="designer"
+          >
+            <img
+              src="assets/images/professionals/mamadou-diallo/thumbnail.jpg"
+              alt="Aïssatou Design"
+              loading="lazy"
+            />
+
+            <div class="professional-info">
+              <span>Designer • Conakry</span>
+
+              <div class="profile-badges">
+                <small>Vérifié</small>
+                <small>Disponible</small>
+              </div>
+
+              <h3>Aïssatou Design</h3>
+              <p>Identité visuelle, affiches, logos et branding.</p>
+
+              <span class="profile-link">Profil bientôt disponible</span>
+              <small class="coming-soon-note">
+                Vous êtes ce profil ? Rejoindre Kazi
+              </small>
+            </div>
+          </a>
+
+          <a
+            href="join.html"
+            class="professional-card coming-soon-card"
+            data-category="developpeur"
+          >
+            <img
+              src="assets/images/professionals/mamadou-diallo/thumbnail.jpg"
+              alt="Ousmane Web"
+              loading="lazy"
+            />
+
+            <div class="professional-info">
+              <span>Développeur web • Conakry</span>
+
+              <div class="profile-badges">
+                <small>Vérifié</small>
+                <small>Disponible</small>
+              </div>
+
+              <h3>Ousmane Web</h3>
+              <p>Sites vitrines, portfolios et landing pages.</p>
+
+              <span class="profile-link">Profil bientôt disponible</span>
+              <small class="coming-soon-note">
+                Vous êtes ce profil ? Rejoindre Kazi
+              </small>
+            </div>
+          </a>
+
+          <a
+            href="join.html"
+            class="professional-card coming-soon-card"
+            data-category="danseur"
+          >
+            <img
+              src="assets/images/professionals/mamadou-diallo/thumbnail.jpg"
+              alt="Kadi Danse"
+              loading="lazy"
+            />
+
+            <div class="professional-info">
+              <span>Danseuse • Conakry</span>
+
+              <div class="profile-badges">
+                <small>Vérifié</small>
+                <small>Disponible</small>
+              </div>
+
+              <h3>Kadi Danse</h3>
+              <p>Chorégraphies, clips et performances événementielles.</p>
+
+              <span class="profile-link">Profil bientôt disponible</span>
+              <small class="coming-soon-note">
+                Vous êtes ce profil ? Rejoindre Kazi
+              </small>
+            </div>
+          </a>
+
+          <a
+            href="join.html"
+            class="professional-card coming-soon-card"
+            data-category="maquilleur"
+          >
+            <img
+              src="assets/images/professionals/mamadou-diallo/thumbnail.jpg"
+              alt="Mariama Make Up"
+              loading="lazy"
+            />
+
+            <div class="professional-info">
+              <span>Maquilleuse • Conakry</span>
+
+              <div class="profile-badges">
+                <small>Vérifié</small>
+                <small>Disponible</small>
+              </div>
+
+              <h3>Mariama Make Up</h3>
+              <p>Maquillage beauté, shooting, mariage et événements.</p>
+
+              <span class="profile-link">Profil bientôt disponible</span>
+              <small class="coming-soon-note">
+                Vous êtes ce profil ? Rejoindre Kazi
+              </small>
+            </div>
+          </a>
+
+          <a
+            href="join.html"
+            class="professional-card coming-soon-card"
+            data-category="createur"
+          >
+            <img
+              src="assets/images/professionals/mamadou-diallo/thumbnail.jpg"
+              alt="Alpha Content"
+              loading="lazy"
+            />
+
+            <div class="professional-info">
+              <span>Créateur de contenu • Conakry</span>
+
+              <div class="profile-badges">
+                <small>Vérifié</small>
+                <small>Disponible</small>
+              </div>
+
+              <h3>Alpha Content</h3>
+              <p>
+                Vidéos courtes, storytelling et contenu pour réseaux sociaux.
+              </p>
+
+              <span class="profile-link">Profil bientôt disponible</span>
+              <small class="coming-soon-note">
+                Vous êtes ce profil ? Rejoindre Kazi
+              </small>
+            </div>
+          </a>
+        </div>
+
+        <div class="empty-state" id="emptyState">
+          <span>Aucun résultat</span>
+
+          <h3>Aucun profil trouvé.</h3>
+
+          <p>
+            Essayez une autre recherche ou dites-nous quel type de profil vous
+            cherchez.
+          </p>
+
+          <a href="contact.html">Nous contacter</a>
+        </div>
+      </section>
+
+      <section class="explore-how">
+        <div class="explore-how-header">
+          <span>Comment ça marche</span>
+          <h2>Trouvez un profil en quelques étapes.</h2>
+        </div>
+
+        <div class="explore-how-grid">
+          <div class="explore-how-card">
+            <span>01</span>
+            <h3>Explorez</h3>
+            <p>
+              Parcourez les profils selon le métier, la ville ou le type de
+              service recherché.
+            </p>
+          </div>
+
+          <div class="explore-how-card">
+            <span>02</span>
+            <h3>Comparez</h3>
+            <p>
+              Regardez les spécialités, le style, les informations et le
+              portfolio du professionnel.
+            </p>
+          </div>
+
+          <div class="explore-how-card">
+            <span>03</span>
+            <h3>Contactez</h3>
+            <p>
+              Passez directement au contact lorsque vous trouvez un profil qui
+              correspond à votre besoin.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="explore-cta">
+        <h2>Vous voulez être visible sur Kazi ?</h2>
+        <a href="join.html">Créer un profil</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">Kazi</a>
+
+          <p>
+            Plateforme moderne pour découvrir des talents indépendants de
+            confiance.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Navigation</h4>
+
+          <a href="professionals.html">Explorer</a>
+          <a href="categories.html">Catégories</a>
+          <a href="join.html">Rejoindre</a>
+          <a href="about.html">À propos</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Catégories</h4>
+
+          <a href="categories.html">Vidéastes</a>
+          <a href="categories.html">Photographes</a>
+          <a href="categories.html">Designers</a>
+          <a href="categories.html">DJs</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact</h4>
+
+          <a href="contact.html">Contact</a>
+          <a href="#">Facebook</a>
+          <a href="#">WhatsApp</a>
+          <a href="#">TikTok</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Kazi. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <a
+      href="https://wa.me/224620000000?text=Bonjour%2C%20je%20viens%20du%20site%20Kazi%20et%20je%20souhaite%20avoir%20plus%20d%E2%80%99informations."
+      class="floating-contact"
+      target="_blank"
+    >
+      💬
+    </a>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/filters.js"></script>
+  </body>
+</html>
