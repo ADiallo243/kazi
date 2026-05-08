@@ -8,7 +8,7 @@
 
     <meta
       name="description"
-      content="Contactez Kazi pour une question, une collaboration ou une demande liée aux profils professionnels."
+      content="Contactez Kazi pour trouver un talent créatif, créer un profil ou discuter d’une collaboration."
     />
 
     <link rel="icon" href="assets/images/branding/favicon.png" />
@@ -53,63 +53,81 @@
       <section class="contact-hero">
         <span class="contact-tag">Contact</span>
 
-        <h1>Une question ? Parlons-en.</h1>
+        <h1>Besoin d’un talent ou d’une information ?</h1>
 
         <p>
-          Contactez Kazi pour une demande, une collaboration ou une question
-          concernant les profils professionnels.
+          Contactez Kazi pour trouver un profil créatif, rejoindre la plateforme
+          ou discuter d’une collaboration autour de projets, contenus et
+          événements.
         </p>
       </section>
 
       <section class="contact-options">
-        <div class="contact-option">
+        <a
+          href="https://wa.me/224620000000?text=Bonjour%2C%20je%20cherche%20un%20talent%20sur%20Kazi.%20J%E2%80%99aimerais%20avoir%20de%20l%E2%80%99aide%20pour%20trouver%20le%20bon%20profil."
+          class="contact-option"
+          target="_blank"
+        >
           <span>01</span>
-          <h3>Vous cherchez un talent ?</h3>
+          <h3>Je cherche un talent</h3>
           <p>
-            Expliquez votre besoin et nous pouvons vous orienter vers le bon
-            type de profil.
+            Vidéaste, photographe, DJ, maquilleur, danseur, designer, animateur
+            ou décorateur pour un projet, un contenu ou un événement.
           </p>
-        </div>
+          <small>Écrire sur WhatsApp</small>
+        </a>
 
-        <div class="contact-option">
+        <a href="join.html" class="contact-option">
           <span>02</span>
-          <h3>Vous voulez rejoindre Kazi ?</h3>
+          <h3>Je veux créer un profil</h3>
           <p>
-            Vous pouvez nous contacter si vous avez une question avant de créer
-            votre profil.
+            Présentez votre travail, vos services, votre ville et votre
+            portfolio pour être visible sur Kazi.
           </p>
-        </div>
+          <small>Remplir la candidature</small>
+        </a>
 
-        <div class="contact-option">
+        <a
+          href="https://wa.me/224620000000?text=Bonjour%2C%20je%20souhaite%20discuter%20d%E2%80%99une%20collaboration%20ou%20d%E2%80%99un%20partenariat%20avec%20Kazi."
+          class="contact-option"
+          target="_blank"
+        >
           <span>03</span>
           <h3>Collaboration ou partenariat</h3>
           <p>
-            Marques, organisateurs ou créateurs : contactez-nous pour discuter
-            d’une collaboration.
+            Marques, organisateurs, médias ou créateurs : discutons d’une
+            collaboration utile autour de Kazi.
           </p>
-        </div>
+          <small>Proposer une collaboration</small>
+        </a>
       </section>
 
       <section class="contact-section">
         <div class="contact-info">
-          <span class="contact-tag">Informations</span>
+          <span class="contact-tag">Message direct</span>
 
-          <h2>Restons connectés.</h2>
+          <h2>Envoyez-nous votre demande.</h2>
 
           <p>
-            Vous êtes un professionnel, une marque ou une personne qui cherche
-            un talent ? Envoyez-nous un message.
+            Remplissez le formulaire et votre message s’ouvrira directement sur
+            WhatsApp. C’est simple, rapide et adapté à la première version de
+            Kazi.
           </p>
 
           <div class="contact-details">
             <div>
-              <strong>Email</strong>
-              <a href="mailto:contact@kazi.com">contact@kazi.com</a>
+              <strong>WhatsApp</strong>
+              <a
+                href="https://wa.me/224620000000?text=Bonjour%2C%20je%20viens%20du%20site%20Kazi."
+                target="_blank"
+              >
+                Écrire à Kazi
+              </a>
             </div>
 
             <div>
-              <strong>Instagram</strong>
-              <a href="https://instagram.com/" target="_blank">@kazi</a>
+              <strong>Email</strong>
+              <a href="mailto:contact@kazi.com">contact@kazi.com</a>
             </div>
 
             <div>
@@ -119,10 +137,16 @@
           </div>
         </div>
 
-        <form class="contact-form">
+        <form class="contact-form" id="contactForm">
           <div class="form-group">
-            <label for="name">Nom complet</label>
-            <input type="text" id="name" name="name" placeholder="Votre nom" />
+            <label for="name">Nom complet *</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Votre nom"
+              required
+            />
           </div>
 
           <div class="form-group">
@@ -136,31 +160,42 @@
           </div>
 
           <div class="form-group">
-            <label for="subject">Sujet</label>
+            <label for="subject">Sujet *</label>
             <input
               type="text"
               id="subject"
               name="subject"
-              placeholder="Ex : Collaboration, profil, question..."
+              placeholder="Ex : Je cherche un vidéaste, partenariat, question..."
+              required
             />
           </div>
 
           <div class="form-group">
-            <label for="message">Message</label>
+            <label for="message">Message *</label>
             <textarea
               id="message"
               name="message"
               rows="6"
-              placeholder="Écrivez votre message ici..."
+              placeholder="Expliquez votre demande ici..."
+              required
             ></textarea>
           </div>
 
-          <button type="submit">Envoyer le message</button>
+          <button type="submit">Envoyer sur WhatsApp</button>
+
+          <p class="contact-form-note">
+            Votre message sera préparé automatiquement dans WhatsApp. Vous
+            pourrez le vérifier avant de l’envoyer.
+          </p>
         </form>
       </section>
 
       <section class="contact-cta">
-        <h2>Vous voulez apparaître sur Kazi ?</h2>
+        <div>
+          <span class="contact-tag">Professionnels</span>
+          <h2>Vous voulez apparaître sur Kazi ?</h2>
+        </div>
+
         <a href="join.html">Créer un profil</a>
       </section>
     </main>
@@ -171,8 +206,8 @@
           <a href="index.html" class="footer-logo">Kazi</a>
 
           <p>
-            Plateforme moderne pour découvrir des talents indépendants de
-            confiance.
+            Talents créatifs et événementiels pour vos projets, contenus et
+            événements.
           </p>
         </div>
 
@@ -198,8 +233,13 @@
           <h4>Contact</h4>
 
           <a href="contact.html">Contact</a>
+          <a
+            href="https://wa.me/224620000000?text=Bonjour%2C%20je%20viens%20du%20site%20Kazi."
+            target="_blank"
+          >
+            WhatsApp
+          </a>
           <a href="#">Facebook</a>
-          <a href="#">WhatsApp</a>
           <a href="#">TikTok</a>
         </div>
       </div>
@@ -220,5 +260,51 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/navbar.js"></script>
     <script src="assets/js/animations.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const contactForm = document.getElementById('contactForm');
+
+        if (!contactForm) return;
+
+        contactForm.addEventListener('submit', (event) => {
+          event.preventDefault();
+
+          const name = document.getElementById('name')?.value.trim();
+          const email = document.getElementById('email')?.value.trim();
+          const subject = document.getElementById('subject')?.value.trim();
+          const message = document.getElementById('message')?.value.trim();
+
+          if (!name || !subject || !message) {
+            alert('Veuillez remplir votre nom, le sujet et le message.');
+            return;
+          }
+
+          const whatsappMessage = `
+Bonjour, je viens du site Kazi.
+
+CONTACT
+Nom : ${name}
+Email : ${email || 'Non renseigné'}
+
+SUJET
+${subject}
+
+MESSAGE
+${message}
+
+Merci.
+          `.trim();
+
+          const kaziWhatsappNumber = '224620000000';
+
+          const whatsappUrl = `https://wa.me/${kaziWhatsappNumber}?text=${encodeURIComponent(
+            whatsappMessage,
+          )}`;
+
+          window.open(whatsappUrl, '_blank');
+        });
+      });
+    </script>
   </body>
 </html>
