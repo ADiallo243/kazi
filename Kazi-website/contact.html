@@ -39,7 +39,6 @@
             <li><a href="categories.html">Catégories</a></li>
             <li><a href="join.html">Rejoindre</a></li>
             <li><a href="about.html">À propos</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
           </ul>
 
           <a href="join.html" class="nav-cta">Créer un profil</a>
@@ -56,15 +55,29 @@
         <h1>Besoin d’un talent ou d’une information ?</h1>
 
         <p>
-          Contactez Kazi pour trouver un profil créatif, rejoindre la plateforme
-          ou discuter d’une collaboration autour de projets, contenus et
+          Contactez Kazi pour trouver un profil créatif, créer un profil ou
+          discuter d’une collaboration autour de projets, contenus et
           événements.
         </p>
+
+        <div class="contact-hero-actions">
+          <a
+            href="https://wa.me/15819941312?text=Bonjour%2C%20je%20cherche%20un%20talent%20sur%20Kazi.%20Voici%20mon%20besoin%20%3A"
+            class="contact-btn primary"
+            target="_blank"
+          >
+            Demander un talent
+          </a>
+
+          <a href="join.html" class="contact-btn secondary">
+            Créer un profil
+          </a>
+        </div>
       </section>
 
       <section class="contact-options">
         <a
-          href="https://wa.me/224620000000?text=Bonjour%2C%20je%20cherche%20un%20talent%20sur%20Kazi.%20J%E2%80%99aimerais%20avoir%20de%20l%E2%80%99aide%20pour%20trouver%20le%20bon%20profil."
+          href="https://wa.me/15819941312?text=Bonjour%2C%20je%20cherche%20un%20talent%20sur%20Kazi.%20J%E2%80%99aimerais%20avoir%20de%20l%E2%80%99aide%20pour%20trouver%20le%20bon%20profil."
           class="contact-option"
           target="_blank"
         >
@@ -88,7 +101,7 @@
         </a>
 
         <a
-          href="https://wa.me/224620000000?text=Bonjour%2C%20je%20souhaite%20discuter%20d%E2%80%99une%20collaboration%20ou%20d%E2%80%99un%20partenariat%20avec%20Kazi."
+          href="https://wa.me/15819941312?text=Bonjour%2C%20je%20souhaite%20discuter%20d%E2%80%99une%20collaboration%20ou%20d%E2%80%99un%20partenariat%20avec%20Kazi."
           class="contact-option"
           target="_blank"
         >
@@ -110,15 +123,14 @@
 
           <p>
             Remplissez le formulaire et votre message s’ouvrira directement sur
-            WhatsApp. C’est simple, rapide et adapté à la première version de
-            Kazi.
+            WhatsApp. Vous pourrez vérifier le message avant de l’envoyer.
           </p>
 
           <div class="contact-details">
             <div>
               <strong>WhatsApp</strong>
               <a
-                href="https://wa.me/224620000000?text=Bonjour%2C%20je%20viens%20du%20site%20Kazi."
+                href="https://wa.me/15819941312?text=Bonjour%2C%20je%20viens%20du%20site%20Kazi."
                 target="_blank"
               >
                 Écrire à Kazi
@@ -126,12 +138,14 @@
             </div>
 
             <div>
-              <strong>Email</strong>
-              <a href="mailto:contact@kazi.com">contact@kazi.com</a>
+              <strong>Besoin rapide</strong>
+              <p>
+                Expliquez le type de talent, la ville, la date et le projet.
+              </p>
             </div>
 
             <div>
-              <strong>Localisation</strong>
+              <strong>Zone</strong>
               <p>Guinée • Afrique francophone</p>
             </div>
           </div>
@@ -221,12 +235,11 @@
         </div>
 
         <div class="footer-column">
-          <h4>Catégories</h4>
+          <h4>Légal</h4>
 
-          <a href="categories.html">Vidéastes</a>
-          <a href="categories.html">Photographes</a>
-          <a href="categories.html">Designers</a>
-          <a href="categories.html">DJs</a>
+          <a href="privacy.html">Confidentialité</a>
+          <a href="terms.html">Conditions</a>
+          <a href="safety.html">Sécurité</a>
         </div>
 
         <div class="footer-column">
@@ -234,13 +247,11 @@
 
           <a href="contact.html">Contact</a>
           <a
-            href="https://wa.me/224620000000?text=Bonjour%2C%20je%20viens%20du%20site%20Kazi."
+            href="https://wa.me/15819941312?text=Bonjour%2C%20je%20viens%20du%20site%20Kazi."
             target="_blank"
           >
             WhatsApp
           </a>
-          <a href="#">Facebook</a>
-          <a href="#">TikTok</a>
         </div>
       </div>
 
@@ -250,7 +261,7 @@
     </footer>
 
     <a
-      href="https://wa.me/224620000000?text=Bonjour%2C%20je%20viens%20du%20site%20Kazi%20et%20je%20souhaite%20avoir%20plus%20d%E2%80%99informations."
+      href="https://wa.me/15819941312?text=Bonjour%2C%20je%20viens%20du%20site%20Kazi%20et%20je%20souhaite%20avoir%20plus%20d%E2%80%99informations."
       class="floating-contact"
       target="_blank"
     >
@@ -296,7 +307,7 @@ ${message}
 Merci.
           `.trim();
 
-          const kaziWhatsappNumber = '224620000000';
+          const kaziWhatsappNumber = '15819941312';
 
           const whatsappUrl = `https://wa.me/${kaziWhatsappNumber}?text=${encodeURIComponent(
             whatsappMessage,

@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Page introuvable — Kazi</title>
+
+    <meta
+      name="description"
+      content="La page demandée est introuvable. Retournez à l’accueil ou explorez les profils sur Kazi."
+    />
+
+    <link rel="icon" href="assets/images/branding/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <style>
+      .not-found {
+        min-height: 78vh;
+        padding: 150px 7% 90px;
+        background:
+          radial-gradient(
+            circle at top left,
+            rgba(31, 79, 70, 0.12),
+            transparent 35%
+          ),
+          #fbfaf7;
+        display: flex;
+        align-items: center;
+      }
+
+      .not-found-content {
+        max-width: 880px;
+      }
+
+      .not-found span {
+        display: inline-block;
+        margin-bottom: 16px;
+        color: #1f4f46;
+        font-size: 0.74rem;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        font-weight: 900;
+      }
+
+      .not-found h1 {
+        max-width: 900px;
+        margin-bottom: 24px;
+        font-size: clamp(3rem, 6.4vw, 6.2rem);
+        line-height: 0.94;
+        letter-spacing: -0.075em;
+      }
+
+      .not-found p {
+        max-width: 620px;
+        color: #555555;
+        font-size: 1.08rem;
+        line-height: 1.7;
+      }
+
+      .not-found-actions {
+        margin-top: 32px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 13px;
+      }
+
+      .not-found-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 22px;
+        border-radius: 999px;
+        font-weight: 900;
+        text-decoration: none;
+        transition:
+          transform 0.25s ease,
+          background-color 0.25s ease,
+          color 0.25s ease;
+      }
+
+      .not-found-btn.primary {
+        background: #1f4f46;
+        color: #ffffff;
+      }
+
+      .not-found-btn.primary:hover {
+        background: #173d36;
+        color: #ffffff;
+        transform: translateY(-2px);
+      }
+
+      .not-found-btn.secondary {
+        background: #ffffff;
+        color: #171717;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+      }
+
+      .not-found-btn.secondary:hover {
+        background: #ffffff;
+        color: #171717;
+        transform: translateY(-2px);
+      }
+
+      @media (max-width: 700px) {
+        .not-found {
+          padding: 130px 6% 70px;
+        }
+
+        .not-found h1 {
+          letter-spacing: -0.06em;
+        }
+
+        .not-found-actions,
+        .not-found-btn {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <a href="index.html" class="logo">Kazi</a>
+
+        <div class="nav-right">
+          <ul class="nav-links">
+            <li><a href="professionals.html">Explorer</a></li>
+            <li><a href="categories.html">Catégories</a></li>
+            <li><a href="join.html">Rejoindre</a></li>
+            <li><a href="about.html">À propos</a></li>
+          </ul>
+
+          <a href="join.html" class="nav-cta">Créer un profil</a>
+
+          <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="not-found">
+        <div class="not-found-content">
+          <span>Erreur 404</span>
+
+          <h1>Page introuvable.</h1>
+
+          <p>
+            Le lien que vous avez ouvert n’existe pas ou a été déplacé. Vous
+            pouvez retourner à l’accueil ou explorer les profils disponibles sur
+            Kazi.
+          </p>
+
+          <div class="not-found-actions">
+            <a href="index.html" class="not-found-btn primary">
+              Retour à l’accueil
+            </a>
+
+            <a href="professionals.html" class="not-found-btn secondary">
+              Explorer les profils
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">Kazi</a>
+
+          <p>
+            Talents créatifs et événementiels pour vos projets, contenus et
+            événements.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Navigation</h4>
+
+          <a href="professionals.html">Explorer</a>
+          <a href="categories.html">Catégories</a>
+          <a href="join.html">Rejoindre</a>
+          <a href="about.html">À propos</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Légal</h4>
+
+          <a href="privacy.html">Confidentialité</a>
+          <a href="terms.html">Conditions</a>
+          <a href="safety.html">Sécurité</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact</h4>
+
+          <a href="contact.html">Contact</a>
+          <a
+            href="https://wa.me/15819941312?text=Bonjour%2C%20je%20viens%20du%20site%20Kazi."
+            target="_blank"
+          >
+            WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Kazi. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/animations.js"></script>
+  </body>
+</html>

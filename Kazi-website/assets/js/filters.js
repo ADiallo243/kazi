@@ -1,91 +1,111 @@
-const filterButtons = document.querySelectorAll('.filter-btn');
+// ===============================
+// KAZI EXPLORER FILTERS + SEARCH
+// ===============================
 
-const professionalCards = document.querySelectorAll('.professional-card');
+document.addEventListener('DOMContentLoaded', () => {
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.professional-card');
+  const searchInput = document.getElementById('searchInput');
+  const emptyState = document.getElementById('emptyState');
+  const profileCount = document.getElementById('profileCount');
 
-const searchInput = document.getElementById('searchInput');
+  if (!cards.length) return;
 
-const emptyState = document.getElementById('emptyState');
+  let currentFilter = 'all';
 
-const profileCount = document.getElementById('profileCount');
+  const normalizeText = (text) =>
+    text
+      .toLowerCase()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '');
 
-let activeFilter = 'all';
+  const updateUrlCategory = (category) => {
+    const url = new URL(window.location.href);
 
-/* FILTER FUNCTION */
-
-function filterCards() {
-  const searchValue = searchInput?.value.toLowerCase().trim() || '';
-
-  let visibleCount = 0;
-
-  professionalCards.forEach((card) => {
-    const category = card.dataset.category?.toLowerCase() || '';
-
-    const text = card.textContent.toLowerCase();
-
-    const matchesFilter =
-      activeFilter === 'all' || category.includes(activeFilter);
-
-    const matchesSearch =
-      text.includes(searchValue) || category.includes(searchValue);
-
-    if (matchesFilter && matchesSearch) {
-      card.style.display = 'flex';
-
-      if (!card.classList.contains('coming-soon-card')) {
-        visibleCount++;
-      }
+    if (category === 'all') {
+      url.searchParams.delete('category');
     } else {
-      card.style.display = 'none';
+      url.searchParams.set('category', category);
     }
-  });
 
-  if (emptyState) {
-    emptyState.style.display = visibleCount === 0 ? 'block' : 'none';
-  }
+    window.history.replaceState({}, '', url);
+  };
 
-  if (profileCount) {
-    profileCount.textContent = visibleCount;
-  }
-}
+  const setActiveButton = (category) => {
+    filterButtons.forEach((button) => {
+      const buttonFilter = button.dataset.filter;
 
-/* FILTER BUTTONS */
+      if (buttonFilter === category) {
+        button.classList.add('active');
+      } else {
+        button.classList.remove('active');
+      }
+    });
+  };
 
-filterButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    activeFilter = button.dataset.filter;
+  const applyFilters = () => {
+    const searchValue = normalizeText(searchInput?.value.trim() || '');
+    let visibleCards = 0;
+    let activeVisibleProfiles = 0;
 
-    filterButtons.forEach((btn) => {
-      btn.classList.remove('active');
+    cards.forEach((card) => {
+      const cardCategory = card.dataset.category || '';
+      const cardText = normalizeText(card.textContent || '');
+
+      const matchesCategory =
+        currentFilter === 'all' || cardCategory === currentFilter;
+
+      const matchesSearch = !searchValue || cardText.includes(searchValue);
+
+      const shouldShow = matchesCategory && matchesSearch;
+
+      card.classList.toggle('is-hidden', !shouldShow);
+
+      if (shouldShow) {
+        visibleCards += 1;
+
+        if (!card.classList.contains('coming-soon-card')) {
+          activeVisibleProfiles += 1;
+        }
+      }
     });
 
-    button.classList.add('active');
+    if (emptyState) {
+      emptyState.style.display = visibleCards === 0 ? 'block' : 'none';
+    }
 
-    filterCards();
-  });
-});
-
-/* SEARCH */
-
-if (searchInput) {
-  searchInput.addEventListener('input', filterCards);
-}
-
-/* URL FILTER */
-
-const urlParams = new URLSearchParams(window.location.search);
-
-const categoryFromURL = urlParams.get('category');
-
-if (categoryFromURL) {
-  activeFilter = categoryFromURL;
+    if (profileCount) {
+      profileCount.textContent = activeVisibleProfiles;
+    }
+  };
 
   filterButtons.forEach((button) => {
-    if (button.dataset.filter === categoryFromURL) {
-      button.classList.add('active');
-    } else {
-      button.classList.remove('active');
-    }
-  });
-}
+    button.addEventListener('click', () => {
+      currentFilter = button.dataset.filter || 'all';
 
-filterCards();
+      setActiveButton(currentFilter);
+      updateUrlCategory(currentFilter);
+      applyFilters();
+    });
+  });
+
+  if (searchInput) {
+    searchInput.addEventListener('input', applyFilters);
+  }
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const categoryFromUrl = urlParams.get('category');
+
+  if (categoryFromUrl) {
+    const matchingButton = document.querySelector(
+      `.filter-btn[data-filter="${categoryFromUrl}"]`,
+    );
+
+    if (matchingButton) {
+      currentFilter = categoryFromUrl;
+      setActiveButton(currentFilter);
+    }
+  }
+
+  applyFilters();
+});

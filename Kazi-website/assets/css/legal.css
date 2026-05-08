@@ -1,0 +1,147 @@
+.legal-hero {
+  padding: 145px 7% 72px;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(31, 79, 70, 0.12),
+      transparent 35%
+    ),
+    #fbfaf7;
+}
+
+.legal-tag {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #1f4f46;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-weight: 900;
+}
+
+.legal-hero h1 {
+  max-width: 1050px;
+  margin-bottom: 24px;
+  font-size: clamp(3rem, 6.4vw, 6.2rem);
+  line-height: 0.94;
+  letter-spacing: -0.075em;
+}
+
+.legal-hero p {
+  max-width: 760px;
+  color: #555555;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.legal-content {
+  padding: 72px 7% 88px;
+  background: #fbfaf7;
+  display: grid;
+  gap: 18px;
+}
+
+.legal-updated {
+  max-width: 900px;
+  padding: 24px 28px;
+  border-radius: 26px;
+  background: #f3efe7;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.legal-updated strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #1f4f46;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 900;
+}
+
+.legal-updated p {
+  color: #555555;
+  font-weight: 700;
+}
+
+.legal-card {
+  max-width: 900px;
+  padding: 30px;
+  border-radius: 28px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.legal-card h2 {
+  margin-bottom: 16px;
+  color: #171717;
+  font-size: clamp(1.45rem, 3vw, 2rem);
+  line-height: 1.1;
+  letter-spacing: -0.045em;
+}
+
+.legal-card p {
+  color: #555555;
+  line-height: 1.75;
+  margin-bottom: 14px;
+}
+
+.legal-card p:last-child {
+  margin-bottom: 0;
+}
+
+.legal-card ul {
+  margin: 10px 0 0 20px;
+  color: #555555;
+  line-height: 1.75;
+}
+
+.legal-card li {
+  margin-bottom: 8px;
+}
+
+.legal-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 14px 22px;
+  border-radius: 999px;
+  background: #1f4f46;
+  color: #ffffff;
+  font-weight: 900;
+  text-decoration: none;
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.legal-btn:hover {
+  background: #173d36;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 700px) {
+  .legal-hero {
+    padding: 125px 6% 58px;
+  }
+
+  .legal-content {
+    padding: 58px 6% 68px;
+  }
+
+  .legal-card,
+  .legal-updated {
+    padding: 24px;
+    border-radius: 24px;
+  }
+
+  .legal-hero h1 {
+    letter-spacing: -0.06em;
+  }
+
+  .legal-hero p {
+    font-size: 1.02rem;
+  }
+}

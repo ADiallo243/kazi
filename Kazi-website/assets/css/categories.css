@@ -1,5 +1,5 @@
 .categories-hero {
-  padding: 180px 7% 90px;
+  padding: 145px 7% 66px;
   background:
     radial-gradient(
       circle at top left,
@@ -11,9 +11,9 @@
 
 .categories-tag {
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   color: #1f4f46;
-  font-size: 0.78rem;
+  font-size: 0.74rem;
   text-transform: uppercase;
   letter-spacing: 0.16em;
   font-weight: 900;
@@ -21,21 +21,68 @@
 
 .categories-hero h1 {
   max-width: 980px;
-  font-size: clamp(3.4rem, 7vw, 6.8rem);
-  line-height: 0.92;
+  margin-bottom: 24px;
+  font-size: clamp(3rem, 6.4vw, 6.1rem);
+  line-height: 0.94;
   letter-spacing: -0.075em;
-  margin-bottom: 26px;
 }
 
 .categories-hero p {
-  max-width: 680px;
+  max-width: 700px;
   color: #555555;
-  font-size: 1.15rem;
+  font-size: 1.08rem;
   line-height: 1.7;
 }
 
+.categories-hero-actions {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+}
+
+.categories-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 22px;
+  border-radius: 999px;
+  font-weight: 900;
+  text-decoration: none;
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.categories-btn.primary {
+  background: #1f4f46;
+  color: #ffffff;
+}
+
+.categories-btn.primary:hover {
+  background: #173d36;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.categories-btn.secondary {
+  background: #ffffff;
+  color: #171717;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.categories-btn.secondary:hover {
+  background: #ffffff;
+  color: #171717;
+  transform: translateY(-2px);
+}
+
+/* GRID */
+
 .categories-grid-section {
-  padding: 0 7% 110px;
+  padding: 0 7% 76px;
+  background: #fbfaf7;
 }
 
 .categories-grid {
@@ -45,27 +92,33 @@
 }
 
 .category-card {
-  min-height: 310px;
-  padding: 30px;
-  border-radius: 34px;
+  min-height: 300px;
+  padding: 28px;
+  border-radius: 30px;
   background: #ffffff;
+  color: #171717;
+  text-decoration: none;
   border: 1px solid rgba(0, 0, 0, 0.06);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    color 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .category-card:hover {
   transform: translateY(-6px);
   background: #173d36;
   color: #ffffff;
-  box-shadow: 0 26px 80px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.1);
 }
 
 .category-card span {
   color: #1f4f46;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 900;
 }
 
@@ -74,39 +127,106 @@
 }
 
 .category-card h2 {
-  font-size: 1.9rem;
+  margin-top: auto;
+  margin-bottom: 16px;
+  font-size: 1.72rem;
   line-height: 1;
   letter-spacing: -0.06em;
-  margin-top: auto;
-  margin-bottom: 18px;
 }
 
 .category-card p {
   color: #666666;
   line-height: 1.6;
+  font-size: 0.94rem;
 }
 
 .category-card:hover p {
   color: rgba(255, 255, 255, 0.75);
 }
 
+.category-card small {
+  display: inline-block;
+  width: fit-content;
+  margin-top: 20px;
+  color: #1f4f46;
+  font-weight: 900;
+}
+
+.category-card:hover small {
+  color: #ffffff;
+}
+
+/* HELP CTA */
+
+.categories-help {
+  margin: 0 7% 76px;
+  padding: 48px;
+  border-radius: 34px;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 36px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 20px 65px rgba(0, 0, 0, 0.055);
+}
+
+.categories-help h2 {
+  max-width: 760px;
+  margin-top: 10px;
+  font-size: clamp(2.2rem, 4.8vw, 4.2rem);
+  line-height: 0.98;
+  letter-spacing: -0.065em;
+}
+
+.categories-help p {
+  max-width: 620px;
+  margin-top: 16px;
+  color: #666666;
+  line-height: 1.65;
+}
+
+.categories-help a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #1f4f46;
+  color: #ffffff;
+  padding: 15px 24px;
+  border-radius: 999px;
+  font-weight: 900;
+  white-space: nowrap;
+  text-decoration: none;
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.categories-help a:hover {
+  background: #173d36;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* PROFESSIONAL CTA */
+
 .categories-cta {
-  margin: 0 7% 110px;
-  padding: 70px;
-  border-radius: 42px;
+  margin: 0 7% 82px;
+  padding: 48px;
+  border-radius: 34px;
   background: #173d36;
   color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  gap: 36px;
 }
 
 .categories-cta h2 {
   max-width: 760px;
-  font-size: clamp(2.4rem, 5vw, 4.8rem);
+  font-size: clamp(2.2rem, 4.8vw, 4.2rem);
   line-height: 0.98;
-  letter-spacing: -0.07em;
+  letter-spacing: -0.065em;
 }
 
 .categories-cta .categories-tag {
@@ -114,34 +234,61 @@
 }
 
 .categories-cta a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: #ffffff;
   color: #173d36;
-  padding: 16px 26px;
+  padding: 15px 24px;
   border-radius: 999px;
   font-weight: 900;
   white-space: nowrap;
+  text-decoration: none;
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
 }
+
+.categories-cta a:hover {
+  transform: translateY(-2px);
+  opacity: 0.92;
+}
+
+/* RESPONSIVE */
 
 @media (max-width: 1100px) {
   .categories-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .categories-help,
   .categories-cta {
     flex-direction: column;
     align-items: flex-start;
-    padding: 46px 30px;
+    padding: 42px 28px;
   }
 }
 
 @media (max-width: 700px) {
   .categories-hero {
-    padding: 160px 6% 70px;
+    padding: 132px 6% 58px;
+  }
+
+  .categories-hero h1,
+  .categories-help h2,
+  .categories-cta h2 {
+    letter-spacing: -0.055em;
+  }
+
+  .categories-hero-actions,
+  .categories-btn {
+    width: 100%;
   }
 
   .categories-grid-section {
     padding-left: 6%;
     padding-right: 6%;
+    padding-bottom: 62px;
   }
 
   .categories-grid {
@@ -150,11 +297,20 @@
 
   .category-card {
     min-height: 250px;
+    padding: 26px;
   }
 
+  .categories-help,
   .categories-cta {
     margin-left: 6%;
     margin-right: 6%;
-    padding: 54px 26px;
+    margin-bottom: 70px;
+    padding: 34px 24px;
+  }
+
+  .categories-help a,
+  .categories-cta a {
+    width: 100%;
+    text-align: center;
   }
 }

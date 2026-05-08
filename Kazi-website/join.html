@@ -56,10 +56,20 @@
           <h1>Présentez votre talent avec une image plus professionnelle.</h1>
 
           <p>
-            Kazi met en avant des profils créatifs, visuels et événementiels :
-            vidéastes, photographes, DJs, maquilleurs, danseurs, designers,
-            animateurs et décorateurs.
+            Créez un profil clair pour montrer votre métier, vos services, votre
+            ville, vos liens et votre portfolio aux personnes qui recherchent un
+            talent créatif ou événementiel.
           </p>
+
+          <div class="join-hero-actions">
+            <a href="#joinForm" class="join-btn primary">
+              Commencer ma candidature
+            </a>
+
+            <a href="professionals.html" class="join-btn secondary">
+              Voir les profils
+            </a>
+          </div>
         </div>
       </section>
 
@@ -86,7 +96,7 @@
           <span>03</span>
           <h3>Contact direct</h3>
           <p>
-            Les visiteurs peuvent vous contacter directement s’ils sont
+            Les visiteurs peuvent vous contacter directement lorsqu’ils sont
             intéressés par votre profil.
           </p>
         </div>
@@ -96,10 +106,12 @@
         <div class="form-wrapper">
           <div class="form-heading">
             <span>Candidature</span>
+
             <h2>Créer un profil</h2>
+
             <p>
-              Remplissez le formulaire. Votre demande sera envoyée par WhatsApp
-              et vérifiée avant publication.
+              Remplissez les informations ci-dessous. Votre demande sera envoyée
+              par WhatsApp pour être revue avant publication.
             </p>
           </div>
 
@@ -127,7 +139,7 @@
                   <option>Designer</option>
                   <option>Animateur / MC</option>
                   <option>Décorateur / Décoratrice</option>
-                  <option>Autre talent créatif</option>
+                  <option>Autre talent créatif ou événementiel</option>
                 </select>
               </div>
 
@@ -152,19 +164,20 @@
               </div>
 
               <div class="input-group">
-                <label for="whatsapp">WhatsApp</label>
+                <label for="whatsapp">WhatsApp *</label>
                 <input
                   type="tel"
                   id="whatsapp"
                   placeholder="+224 000 00 00 00"
+                  required
                 />
               </div>
 
               <div class="input-group">
-                <label for="facebook">Facebook / Instagram</label>
+                <label for="social">Instagram / Facebook / TikTok</label>
                 <input
                   type="url"
-                  id="facebook"
+                  id="social"
                   placeholder="https://instagram.com/username"
                 />
               </div>
@@ -174,15 +187,16 @@
                 <input
                   type="url"
                   id="portfolio"
-                  placeholder="Lien vers Instagram, TikTok, YouTube, Google Drive, Behance..."
+                  placeholder="Instagram, TikTok, YouTube, Google Drive, Behance..."
                   required
                 />
               </div>
 
               <div class="input-group full-width">
                 <label for="description">
-                  Parlez rapidement de votre travail *
+                  Décrivez votre travail en quelques lignes *
                 </label>
+
                 <textarea
                   id="description"
                   rows="6"
@@ -195,7 +209,13 @@
                 <label for="portfolio-upload">Portfolio / images</label>
 
                 <div class="upload-box">
-                  <input type="file" id="portfolio-upload" multiple hidden />
+                  <input
+                    type="file"
+                    id="portfolio-upload"
+                    multiple
+                    hidden
+                    accept="image/*,video/*,.pdf"
+                  />
 
                   <label for="portfolio-upload" class="upload-label">
                     <span>Ajoutez quelques fichiers</span>
@@ -205,6 +225,10 @@
                       conversation.
                     </small>
                   </label>
+
+                  <p class="file-preview" id="filePreview">
+                    Aucun fichier sélectionné.
+                  </p>
                 </div>
               </div>
             </div>
@@ -214,8 +238,8 @@
             </button>
 
             <p class="form-note">
-              Les profils sont vérifiés manuellement avant publication afin de
-              garder une plateforme claire, sérieuse et fiable.
+              Les profils sont revus avant publication afin de garder une
+              plateforme claire, sérieuse et fiable.
             </p>
 
             <div class="form-process">
@@ -226,7 +250,7 @@
 
               <div>
                 <span>02</span>
-                <p>Votre profil est vérifié avant publication.</p>
+                <p>Les informations de votre profil sont vérifiées.</p>
               </div>
 
               <div>
@@ -238,8 +262,16 @@
         </div>
       </section>
 
-      <section class="explore-cta">
-        <h2>Vous voulez voir les profils déjà disponibles ?</h2>
+      <section class="join-cta">
+        <div>
+          <span>Clients</span>
+          <h2>Vous cherchez plutôt un talent ?</h2>
+          <p>
+            Explorez les profils disponibles ou envoyez-nous directement votre
+            besoin.
+          </p>
+        </div>
+
         <a href="professionals.html">Explorer les profils</a>
       </section>
     </main>
@@ -265,21 +297,23 @@
         </div>
 
         <div class="footer-column">
-          <h4>Catégories</h4>
+          <h4>Légal</h4>
 
-          <a href="categories.html">Vidéastes</a>
-          <a href="categories.html">Photographes</a>
-          <a href="categories.html">Designers</a>
-          <a href="categories.html">DJs</a>
+          <a href="privacy.html">Confidentialité</a>
+          <a href="terms.html">Conditions</a>
+          <a href="safety.html">Sécurité</a>
         </div>
 
         <div class="footer-column">
           <h4>Contact</h4>
 
           <a href="contact.html">Contact</a>
-          <a href="#">Facebook</a>
-          <a href="#">WhatsApp</a>
-          <a href="#">TikTok</a>
+          <a
+            href="https://wa.me/15819941312?text=Bonjour%2C%20je%20viens%20du%20site%20Kazi."
+            target="_blank"
+          >
+            WhatsApp
+          </a>
         </div>
       </div>
 
@@ -289,7 +323,7 @@
     </footer>
 
     <a
-      href="https://wa.me/224620000000?text=Bonjour%2C%20je%20viens%20du%20site%20Kazi%20et%20je%20souhaite%20avoir%20plus%20d%E2%80%99informations."
+      href="https://wa.me/15819941312?text=Bonjour%2C%20je%20viens%20du%20site%20Kazi%20et%20je%20souhaite%20avoir%20plus%20d%E2%80%99informations."
       class="floating-contact"
       target="_blank"
     >

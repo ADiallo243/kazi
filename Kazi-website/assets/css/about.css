@@ -1,5 +1,5 @@
 .about-hero {
-  padding: 180px 7% 100px;
+  padding: 145px 7% 72px;
   background:
     radial-gradient(
       circle at top left,
@@ -11,54 +11,98 @@
 
 .about-tag {
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   color: #1f4f46;
-  font-size: 0.78rem;
+  font-size: 0.74rem;
   text-transform: uppercase;
   letter-spacing: 0.16em;
   font-weight: 900;
 }
 
 .about-hero h1 {
-  max-width: 950px;
-  font-size: clamp(3.4rem, 7vw, 6.8rem);
-  line-height: 0.92;
+  max-width: 1050px;
+  margin-bottom: 24px;
+  font-size: clamp(3rem, 6.4vw, 6.2rem);
+  line-height: 0.94;
   letter-spacing: -0.075em;
-  margin-bottom: 28px;
 }
 
 .about-hero p {
   max-width: 720px;
   color: #555555;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   line-height: 1.7;
 }
 
+.about-hero-actions {
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.about-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 22px;
+  border-radius: 999px;
+  font-weight: 900;
+  text-decoration: none;
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.about-btn.primary {
+  background: #1f4f46;
+  color: #ffffff;
+}
+
+.about-btn.primary:hover {
+  background: #173d36;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.about-btn.secondary {
+  background: #ffffff;
+  color: #171717;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.about-btn.secondary:hover {
+  background: #ffffff;
+  color: #171717;
+  transform: translateY(-2px);
+}
+
 .about-statement {
-  padding: 110px 7%;
+  padding: 76px 7%;
   background: #ffffff;
 }
 
 .about-statement h2 {
-  max-width: 1100px;
-  font-size: clamp(2.7rem, 6vw, 5.8rem);
-  line-height: 0.94;
+  max-width: 1050px;
+  font-size: clamp(2.45rem, 5.3vw, 5rem);
+  line-height: 0.95;
   letter-spacing: -0.075em;
 }
 
 .about-grid-section {
-  padding: 100px 7%;
+  padding: 76px 7%;
   background: #f3efe7;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
+  gap: 18px;
 }
 
 .about-card {
   background: #ffffff;
-  border-radius: 30px;
-  padding: 34px;
-  min-height: 240px;
+  border-radius: 28px;
+  padding: 30px;
+  min-height: 210px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -71,132 +115,204 @@
 }
 
 .about-card h3 {
-  font-size: 1.7rem;
+  font-size: 1.55rem;
   letter-spacing: -0.04em;
 }
 
 .about-card p {
   color: #666666;
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 .about-split {
-  padding: 120px 7%;
+  padding: 76px 7%;
   background: #fbfaf7;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 70px;
+  gap: 56px;
   align-items: start;
 }
 
 .about-split h2 {
-  font-size: clamp(2.6rem, 5vw, 5rem);
+  font-size: clamp(2.35rem, 4.8vw, 4.5rem);
   line-height: 0.98;
   letter-spacing: -0.07em;
 }
 
+.about-copy {
+  display: grid;
+  gap: 18px;
+}
+
+.about-copy p,
 .about-split p {
   color: #555555;
-  font-size: 1.1rem;
-  line-height: 1.8;
+  font-size: 1.04rem;
+  line-height: 1.75;
 }
-
-.about-cta {
-  margin: 0 7% 110px;
-  padding: 70px;
-  border-radius: 40px;
-  background: #173d36;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-}
-
-.about-cta h2 {
-  max-width: 760px;
-  font-size: clamp(2.4rem, 5vw, 4.8rem);
-  line-height: 0.98;
-  letter-spacing: -0.07em;
-}
-
-.about-btn {
-  background: #ffffff;
-  color: #173d36;
-  padding: 16px 26px;
-  border-radius: 999px;
-  font-weight: 900;
-  white-space: nowrap;
-}
-
-@media (max-width: 900px) {
-  .about-hero {
-    padding: 160px 6% 80px;
-  }
-
-  .about-statement,
-  .about-grid-section,
-  .about-split {
-    padding-left: 6%;
-    padding-right: 6%;
-  }
-
-  .about-grid-section,
-  .about-split {
-    grid-template-columns: 1fr;
-  }
-
-  .about-cta {
-    margin: 0 6% 80px;
-    padding: 44px 28px;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-/* ABOUT BENEFITS */
 
 .about-benefits {
-  padding: 0 7% 110px;
-
+  padding: 0 7% 76px;
+  background: #fbfaf7;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
+  gap: 18px;
 }
 
 .about-benefit {
   background: #ffffff;
-
-  padding: 34px;
-
-  border-radius: 32px;
-
+  padding: 30px;
+  border-radius: 28px;
   border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .about-benefit span {
   color: #1f4f46;
-
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 900;
 }
 
 .about-benefit h3 {
-  margin: 20px 0 14px;
-
-  font-size: 1.45rem;
+  margin: 18px 0 12px;
+  font-size: 1.35rem;
   letter-spacing: -0.04em;
 }
 
 .about-benefit p {
   color: #666666;
-  line-height: 1.8;
+  line-height: 1.7;
 }
 
+/* WHY KAZI */
+
+.about-proof {
+  margin: 0 7% 76px;
+  padding: 48px;
+  border-radius: 34px;
+  background: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 42px;
+  align-items: start;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 20px 65px rgba(0, 0, 0, 0.055);
+}
+
+.about-proof h2 {
+  max-width: 760px;
+  margin-top: 10px;
+  font-size: clamp(2.2rem, 4.6vw, 4.2rem);
+  line-height: 0.98;
+  letter-spacing: -0.065em;
+}
+
+.about-proof p {
+  color: #555555;
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+/* CTA */
+
+.about-cta {
+  margin: 0 7% 78px;
+  padding: 48px;
+  border-radius: 34px;
+  background: #173d36;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 34px;
+}
+
+.about-cta .about-tag {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.about-cta h2 {
+  max-width: 760px;
+  font-size: clamp(2.2rem, 4.6vw, 4.2rem);
+  line-height: 0.98;
+  letter-spacing: -0.065em;
+}
+
+.about-btn.white {
+  background: #ffffff;
+  color: #173d36;
+  white-space: nowrap;
+}
+
+.about-btn.white:hover {
+  background: #ffffff;
+  color: #173d36;
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVE */
+
 @media (max-width: 1000px) {
-  .about-benefits {
+  .about-grid-section,
+  .about-split,
+  .about-benefits,
+  .about-proof {
     grid-template-columns: 1fr;
+  }
+
+  .about-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 700px) {
+  .about-hero {
+    padding: 125px 6% 58px;
+  }
+
+  .about-statement,
+  .about-grid-section,
+  .about-split,
+  .about-benefits {
     padding-left: 6%;
     padding-right: 6%;
+  }
+
+  .about-statement,
+  .about-grid-section,
+  .about-split {
+    padding-top: 62px;
+    padding-bottom: 62px;
+  }
+
+  .about-benefits {
+    padding-bottom: 62px;
+  }
+
+  .about-card,
+  .about-benefit {
+    padding: 26px;
+  }
+
+  .about-proof,
+  .about-cta {
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 62px;
+    padding: 34px 24px;
+    border-radius: 30px;
+  }
+
+  .about-hero h1,
+  .about-statement h2,
+  .about-split h2,
+  .about-proof h2,
+  .about-cta h2 {
+    letter-spacing: -0.06em;
+  }
+
+  .about-hero-actions,
+  .about-btn {
+    width: 100%;
   }
 }
