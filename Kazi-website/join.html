@@ -8,7 +8,7 @@
 
     <meta
       name="description"
-      content="Créez votre profil professionnel et rejoignez les talents visibles sur Kazi."
+      content="Créez votre profil Kazi et présentez vos services créatifs, visuels ou événementiels de manière professionnelle."
     />
 
     <link rel="icon" href="assets/images/branding/favicon.png" />
@@ -53,11 +53,12 @@
         <div class="join-content">
           <span class="join-tag">Rejoindre Kazi</span>
 
-          <h1>Présentez votre travail de manière plus professionnelle.</h1>
+          <h1>Présentez votre talent avec une image plus professionnelle.</h1>
 
           <p>
-            Créez votre profil Kazi et montrez votre portfolio, vos services et
-            votre univers dans une vitrine claire et moderne.
+            Kazi met en avant des profils créatifs, visuels et événementiels :
+            vidéastes, photographes, DJs, maquilleurs, danseurs, designers,
+            animateurs et décorateurs.
           </p>
         </div>
       </section>
@@ -65,28 +66,28 @@
       <section class="join-benefits">
         <div class="join-benefit">
           <span>01</span>
-          <h3>Profil clair</h3>
+          <h3>Un profil clair</h3>
           <p>
-            Présentez votre métier, votre ville, vos services et votre portfolio
-            dans une page propre.
+            Présentez votre métier, votre ville, vos services, vos liens et
+            votre portfolio au même endroit.
           </p>
         </div>
 
         <div class="join-benefit">
           <span>02</span>
-          <h3>Contact direct</h3>
+          <h3>Plus de confiance</h3>
           <p>
-            Les visiteurs peuvent vous contacter plus facilement pour discuter
-            de leur projet.
+            Une page propre et organisée aide les clients à comprendre votre
+            travail plus rapidement.
           </p>
         </div>
 
         <div class="join-benefit">
           <span>03</span>
-          <h3>Image professionnelle</h3>
+          <h3>Contact direct</h3>
           <p>
-            Une présence mieux organisée aide à inspirer confiance dès le
-            premier regard.
+            Les visiteurs peuvent vous contacter directement s’ils sont
+            intéressés par votre profil.
           </p>
         </div>
       </section>
@@ -96,6 +97,10 @@
           <div class="form-heading">
             <span>Candidature</span>
             <h2>Créer un profil</h2>
+            <p>
+              Remplissez le formulaire. Votre demande sera envoyée par WhatsApp
+              et vérifiée avant publication.
+            </p>
           </div>
 
           <form class="join-form" id="joinForm">
@@ -105,7 +110,7 @@
                 <input
                   type="text"
                   id="fullName"
-                  placeholder="Mamadou Diallo"
+                  placeholder="Ex : Mamadou Diallo"
                   required
                 />
               </div>
@@ -116,18 +121,24 @@
                   <option value="">Sélectionner</option>
                   <option>Vidéaste</option>
                   <option>Photographe</option>
-                  <option>Designer</option>
-                  <option>Développeur web</option>
                   <option>DJ</option>
-                  <option>Danseur</option>
-                  <option>Maquilleur</option>
-                  <option>Créateur de contenu</option>
+                  <option>Danseur / Danseuse</option>
+                  <option>Maquilleur / Maquilleuse</option>
+                  <option>Designer</option>
+                  <option>Animateur / MC</option>
+                  <option>Décorateur / Décoratrice</option>
+                  <option>Autre talent créatif</option>
                 </select>
               </div>
 
               <div class="input-group">
                 <label for="city">Ville *</label>
-                <input type="text" id="city" placeholder="Conakry" required />
+                <input
+                  type="text"
+                  id="city"
+                  placeholder="Ex : Conakry"
+                  required
+                />
               </div>
 
               <div class="input-group">
@@ -150,11 +161,11 @@
               </div>
 
               <div class="input-group">
-                <label for="facebook">Facebook</label>
+                <label for="facebook">Facebook / Instagram</label>
                 <input
                   type="url"
                   id="facebook"
-                  placeholder="https://facebook.com/username"
+                  placeholder="https://instagram.com/username"
                 />
               </div>
 
@@ -163,7 +174,7 @@
                 <input
                   type="url"
                   id="portfolio"
-                  placeholder="https://votre-portfolio.com"
+                  placeholder="Lien vers Instagram, TikTok, YouTube, Google Drive, Behance..."
                   required
                 />
               </div>
@@ -175,7 +186,7 @@
                 <textarea
                   id="description"
                   rows="6"
-                  placeholder="Votre univers, vos spécialités, votre style..."
+                  placeholder="Ex : Je suis vidéaste à Conakry, spécialisé dans les clips, mariages et contenus pour réseaux sociaux..."
                   required
                 ></textarea>
               </div>
@@ -187,26 +198,30 @@
                   <input type="file" id="portfolio-upload" multiple hidden />
 
                   <label for="portfolio-upload" class="upload-label">
-                    <span>Glissez vos fichiers ici</span>
-                    <small>ou cliquez pour importer vos images</small>
+                    <span>Ajoutez quelques fichiers</span>
+                    <small>
+                      Les fichiers ne seront pas envoyés automatiquement par
+                      WhatsApp. Vous pourrez les envoyer ensuite dans la
+                      conversation.
+                    </small>
                   </label>
                 </div>
               </div>
             </div>
 
             <button type="submit" class="submit-btn">
-              Envoyer ma candidature
+              Envoyer ma candidature par WhatsApp
             </button>
 
             <p class="form-note">
-              Les profils sont vérifiés avant publication afin de garder une
-              plateforme propre et fiable.
+              Les profils sont vérifiés manuellement avant publication afin de
+              garder une plateforme claire, sérieuse et fiable.
             </p>
 
             <div class="form-process">
               <div>
                 <span>01</span>
-                <p>Nous recevons votre candidature.</p>
+                <p>Vous envoyez votre candidature via WhatsApp.</p>
               </div>
 
               <div>
@@ -222,6 +237,11 @@
           </form>
         </div>
       </section>
+
+      <section class="explore-cta">
+        <h2>Vous voulez voir les profils déjà disponibles ?</h2>
+        <a href="professionals.html">Explorer les profils</a>
+      </section>
     </main>
 
     <footer class="site-footer">
@@ -230,8 +250,8 @@
           <a href="index.html" class="footer-logo">Kazi</a>
 
           <p>
-            Plateforme moderne pour découvrir des talents indépendants de
-            confiance.
+            Talents créatifs et événementiels pour vos projets, contenus et
+            événements.
           </p>
         </div>
 
