@@ -1,35 +1,38 @@
 .site-footer {
   background: #123730;
   color: #ffffff;
-  padding: 90px 7% 34px;
+  padding: 64px 7% 28px;
 }
 
 .footer-top {
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr 1fr;
-  gap: 50px;
-  margin-bottom: 70px;
+  grid-template-columns: 1.5fr 0.9fr 0.9fr 0.9fr;
+  gap: 42px;
+  margin-bottom: 46px;
 }
 
 .footer-logo {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: 900;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
   letter-spacing: -0.06em;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .footer-brand p {
-  max-width: 320px;
+  max-width: 340px;
   color: rgba(255, 255, 255, 0.72);
-  line-height: 1.8;
+  line-height: 1.7;
+  font-size: 0.96rem;
 }
 
 .footer-column h4 {
-  margin-bottom: 20px;
-  font-size: 0.9rem;
+  margin-bottom: 16px;
+  font-size: 0.78rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.11em;
   color: rgba(255, 255, 255, 0.46);
 }
 
@@ -39,38 +42,58 @@
 }
 
 .footer-column a {
-  margin-bottom: 14px;
+  width: fit-content;
+  margin-bottom: 11px;
   color: #ffffff;
-  transition: 0.25s ease;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
 }
 
 .footer-column a:hover {
   opacity: 0.65;
+  transform: translateX(2px);
 }
 
 .footer-bottom {
-  padding-top: 26px;
+  padding-top: 22px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .footer-bottom p {
   color: rgba(255, 255, 255, 0.52);
-  font-size: 0.92rem;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 1000px) {
   .footer-top {
     grid-template-columns: 1fr 1fr;
+    gap: 36px;
   }
 }
 
 @media (max-width: 700px) {
   .site-footer {
-    padding: 70px 6% 30px;
+    padding: 54px 6% 26px;
   }
 
   .footer-top {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 30px;
+    margin-bottom: 38px;
+  }
+
+  .footer-logo {
+    font-size: 1.75rem;
+  }
+
+  .footer-column h4 {
+    margin-bottom: 12px;
+  }
+
+  .footer-column a {
+    margin-bottom: 9px;
   }
 }
